@@ -5,7 +5,7 @@ import Coins from "./components/Coins";
 import Coin from "./routes/Coin";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
-import { Container } from 'react-bootstrap'
+
 
 function App() {
   const [coins, setCoins] = useState([]);
