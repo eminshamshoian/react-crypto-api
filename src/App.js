@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Coins from "./components/Coins";
 import Coin from "./routes/Coin";
 import Navbar from "./components/Navbar";
+import Signup from "./components/Signup";
+
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -27,9 +29,10 @@ function App() {
     <>
       <Navbar />
       <Routes>
+        <Route path="/signup" element = {<Signup />} />
         <Route path='/' element={<Coins coins={coins} />} />
         <Route path='/coin' element={<Coin />}>
-          <Route path=':coinId' element={<Coin />} />
+        <Route path=':coinId' element={<Coin />} />
         </Route>
       </Routes>
     </>
